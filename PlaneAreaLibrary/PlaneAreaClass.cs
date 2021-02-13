@@ -23,7 +23,7 @@ namespace PlaneAreaLibrary
         /// Проверка на существование круга
         /// </summary>
         /// <returns>true- круг существует, false- круг не существует</returns>
-        public static bool ExistsCircle(double r)
+        private static bool ExistsCircle(double r)
         {
             if (r > 0 && r != double.PositiveInfinity)  //Проверка радиуса круга на то, что он положительное рациональное число
             {
@@ -73,7 +73,7 @@ namespace PlaneAreaLibrary
         ///Проверка на существование треугольника
         /// </summary>
         /// <returns>true- треугольник существует, false- треугольник не существует</returns>
-        public static bool ExistsTriangle(double a, double b, double c) //Проверка сторон треугольника на то, что они положительные рациональные числа
+        private static bool ExistsTriangle(double a, double b, double c) //Проверка сторон треугольника на то, что они положительные рациональные числа
         {
             if (a > 0 && b > 0 && c > 0 && (a < b + c || b < a + c || c < b + a)&&(a!= double.PositiveInfinity && b != double.PositiveInfinity && c != double.PositiveInfinity))
                 {
